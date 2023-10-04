@@ -1,0 +1,26 @@
+.logo{
+    width: 160px;
+    height: 80px;
+}
+
+
+.carouselItem{
+    height: 680px;
+    /* para que se achique  */
+    flex-wrap: wrap; 
+    justify-content: space-around;
+}
+
+.fondoOpaco{
+    background-color: rgb(40, 38, 38);
+    opacity: 0.56;
+    filter: brightness(50%);
+}
+
+.textCarousel {
+    /* posición */
+    position: absolute;
+    top: 8px;
+    right: 16px;
+
+  }

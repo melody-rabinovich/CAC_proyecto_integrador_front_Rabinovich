@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>CAC Proyecto Integrador - Melody Rabinovich</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/indexStyle.css">
+    </head>
+    <body>
+
+        <!-- navbar  -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+                <!-- apretando el logo de Codo a Codo, manda a la url del tp integrador -->
+                <a class="navbar-brand" href="https://aulasvirtuales.bue.edu.ar/course/view.php?id=14975&section=13"  target="_blank">
+                    <img src="img/codoacodo.png" alt="logo codo a codo" class="img-fluid logo m-0 ms-5 p-0">
+                </a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active  me-3 " aria-current="page" href="#">La Conferencia</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link me-3 " href="#oradores">Los Oradores</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link  me-3 " href="#">Lugar Y Fecha</a>
+                        </li>  
+                        <li class="nav-item">
+                            <a class="nav-link  me-3" href="#">Convertite en Orador</a>
+                        </li>  
+                        <li class="nav-item text-success ">
+                            <a class="nav-link text-success  me-3" href="#">Comprar tickets</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+
+        <!-- Carousel -->
+        <div id="carouselExampleControls " class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <!-- imagenes del carousel -->
+                <div class="carousel-item active">
+                    <img src="img/ba1.jpg" class="d-block w-100 carouselItem" alt="Buenos Aires">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/ba2.jpg" class="d-block w-100 carouselItem" alt="Buenos Aires">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/ba3.jpg" class="d-block w-100 carouselItem" alt="Buenos Aires">
+                </div>
+
+                
+            </div>
+           
+            
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+            
+
+            <!-- usé una clase de bootstrap que originalmente está planteada para las cards, 
+                pero es más optimizado usarla que hacer los estilos manualmente 
+            
+                para la clase nativa, usar textCarousel-->
+            <div class="fondoOpaco text-light p-5 card-img-overlay align-content-lg-center align-content-end row ms-auto">
+                <div class="col-lg-6 m-auto text-lg-end">
+                    <h2 class="fw-bold text-light">Conf Bs As</h2>
+                    <p>Bs As llega por primera vez a Argentina. Un evento para compartir con
+                        nuestra comunidad el  conocimiento y experiencia de los expertos que estan creando el futuro de Internet. Ven
+                        a conocer a  miembros del evento, a otros estudienates de Codo a Codo y a oradores de primer nivel
+                        que  tenemos para ti. Te esperamos!
+                    </p>
+                </div> 
+
+                <div>
+                    <a href="#" class="btn btn-outline-light ">Quiero ser orador</a>
+                    <a href="#" class="btn btn-success ">Comprar tickets</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="align-content-center">
+            <h2 class = "m-lg-5 text-center"> Conocé a los <span class="fw-bold"> oradores </span> </h2>
+        </div>
+        
+        <!-- cards -->
+        <div class="container" id="oradores">
+            <div class="row flex-wrap justify-content-center">
+
+                <div class="card m-5" style="width: 18rem;">
+                    <img src="img/steve.jpg" class="card-img-top" alt="steve jobs">
+                    <div class="card-body">
+                        <span class="badge bg-warning text-dark">Javascript</span>
+                        <span class="badge bg-info ">React</span>
+
+                        <h5 class="card-title">Steve Jobs</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+
+                <div class="card m-5" style="width: 18rem;">
+                    <img src="img/bill.jpg" class="card-img-top" alt="bill gates">
+                    <div class="card-body">
+                        <span class="badge bg-warning text-dark">Javascript</span>
+                        <span class="badge bg-info ">React</span>
+
+                        <h5 class="card-title">Bill Gates</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+
+                <div class="card m-5" style="width: 18rem;">
+                    <img src="img/ada.jpeg" class="card-img-top" alt="ada lovelace">
+                    <div class="card-body">
+                        <span class="badge bg-secondary ">Negocios</span>
+                        <span class="badge bg-danger ">Startup</span>
+
+                        <h5 class="card-title">Ada Lovelace</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+
+
+    </body>
+</html>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
