@@ -66,15 +66,15 @@
                     <form class="row">
                         <div class="row">
                             <div class="col">
-                                <input type="text" class="form-control" placeholder="Nombre" aria-label="First name">
+                                <input type="text" class="form-control" placeholder="Nombre" aria-label="First name" id="inputNombre">
                             </div>
                             <div class="col">
-                                <input type="text" class="form-control" placeholder="Apellido" aria-label="Last name">
+                                <input type="text" class="form-control" placeholder="Apellido" aria-label="Last name" id="inputApellido">
                             </div>
                         </div>
                         <div class="col">
-                            <label for="inputEmail4" class="form-label"></label>
-                            <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+                            <label for="inputEmail" class="form-label"></label>
+                            <input type="text" class="form-control" id="inputEmail" placeholder="Email">
                         </div>
                         <div class="col">
                             <label for="inputCantidad" class="form-label"></label>
@@ -87,7 +87,7 @@
 
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">cancelar</button>
-                    <button type="button" class="btn btn-primary">comprar</button>
+                    <button type="button" class="btn btn-primary" onclick="verificarDatos()">comprar</button>
                 </div>
             </div>
             </div>
