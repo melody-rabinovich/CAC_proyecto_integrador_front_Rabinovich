@@ -29,3 +29,8 @@
     width: 100%;
     height:fit-content;
 }
+
+footer{
+    justify-content: space-between;
+    background-color: #213c69;
+}
