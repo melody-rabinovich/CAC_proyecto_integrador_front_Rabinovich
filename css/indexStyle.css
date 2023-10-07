@@ -11,9 +11,9 @@
     justify-content: space-around;
 }
 
-.fondoOpaco{
-    background-color: rgb(40, 38, 38);
-    opacity: 0.56;
+.opaco{
+    /* background-color: rgb(40, 38, 38); */
+    /* opacity: 0.56; */
     filter: brightness(50%);
 }
 
@@ -24,3 +24,8 @@
     right: 16px;
 
   }
+
+.imgHawaii{
+    width: 100%;
+    height:fit-content;
+}
