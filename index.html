@@ -30,10 +30,10 @@
                             <a class="nav-link me-3 " href="#oradores">Los Oradores</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link  me-3 " href="#">Lugar Y Fecha</a>
+                            <a class="nav-link  me-3 " href="#info">Lugar Y Fecha</a>
                         </li>  
                         <li class="nav-item">
-                            <a class="nav-link  me-3" href="#">Convertite en Orador</a>
+                            <a class="nav-link  me-3" href="#serOrador">Convertite en Orador</a>
                         </li>  
                         <li class="nav-item text-success ">
                             <a class="nav-link text-success  me-3" href="#">Comprar tickets</a>
@@ -94,7 +94,7 @@
         </div>
         
         <!-- cards -->
-        <div class="container my-5" id="oradores"> 
+        <div class="container-fluid my-5" id="oradores"> 
             <!-- my: clase de bootstrap para margin top y margin bottom -->
             <div class="row flex-wrap justify-content-center">
 
@@ -135,12 +135,12 @@
 
 
         <!-- imagen hawaii y texto información -->
-        <div class="container-fluid">
-            <div class="row">
+        <div class="container-fluid" id="info">
+            <div class="row h-25">
                 <div class="col-lg-6">
                     <img src="img/honolulu.jpg" alt="" class="imgHawaii">
                 </div>
-                <div class="col-lg-6 bg-dark text-light">
+                <div class="col-lg-6 bg-dark text-light p-5">
                     <h2> Bs As - Octubre </h2>
                     <p> Buenos Aires es la provincia y localidad más grande del estado de Argentina, 
                         en los Estados Unidos. Honolulu es la más sureña de entre las principales 
@@ -151,6 +151,38 @@
                     </p>
                     <button type="button" class="btn btn-outline-light">Conocé Más</button>
                 </div>
+            </div>
+        </div>
+
+
+        <!-- form para ser orador -->
+        <div class="container" id="serOrador">
+            <div class="row">
+                <div class="text-center m-5">
+                    <h6>convertite en</h6>
+                    <h3 class="fw-bold">ORADOR</h3>
+                    <h6 class="text-secondary">Anotate para dar una charla ignite. Contanos de qué querés hablar</h6>
+                </div>
+
+                <div class="col  g-3 mb-3">
+                    <input type="text" class="form-control" placeholder="nombre" aria-label="First name">
+                </div>
+                <div class="col  g-3 mb-3">
+                    <input type="text" class="form-control" placeholder="apellido" aria-label="Last name">
+                </div>
+
+                <div>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="sobre qué querés hablar?"></textarea>
+                </div>
+                
+                <h6 class="text-secondary mt-2"> recordá incluir un título para tu charla</h6>
+
+
+                <div class="d-grid gap-2 my-2">
+                    <button class="btn btn-success my-3" type="button">Enviar</button>
+                </div>
+
+
             </div>
         </div>
 
